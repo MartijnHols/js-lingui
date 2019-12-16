@@ -44,6 +44,7 @@ const extractor: ExtractorType = {
       // here until we have a better way to run extract-messages plugin
       // *after* all plugins/presets.
       // Transform plugins are idempotent, so they can run twice.
+      "babel-plugin-macros",
       linguiTransformJs,
       linguiTransformReact,
       [linguiExtractMessages, { localeDir }],
